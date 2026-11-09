@@ -36,7 +36,7 @@ npm run fake
 
 Watch the browser: `HEADED=1 npm start`.
 
-Measure page sizes: `npm run measure`.
+Measure page sizes: `npm run measure`. On 2026-11-09 it printed 927 characters for the TodoMVC accessibility snapshot, and 522,389 (live DOM) vs 74,771 (snapshot) for Wikipedia's "Web browser" page; live pages change, so your Wikipedia numbers will differ a little.
 
 ## What you should see
 
@@ -127,6 +127,8 @@ step 8: snapshot({})
 ## Your turn
 
 Fill in line 23: find an element both ways, by ref and by role + name.
+
+Before you fill it in, the agent can't find elements, so the answer ends with `The page says ? item left.` The solution ends with `The page says 1 item left.`
 
 ```sh
 npm run your-turn     # your version

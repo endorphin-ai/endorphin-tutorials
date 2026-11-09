@@ -107,6 +107,8 @@ Saved report.md
 
 Fill in line 14: a wrong number must print FAILED, and 1 must print PASSED.
 
+Before you fill it in, the "Your turn" row is FAILED with `expected undefined`. The solution's row is PASSED: `The footer says 1 item left; expected 1.`
+
 ```sh
 npm run your-turn     # your version
 npm run solution      # the answer

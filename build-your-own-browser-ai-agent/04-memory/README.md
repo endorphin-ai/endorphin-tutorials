@@ -107,6 +107,8 @@ Tokens used: 6595
 
 Which snapshot do you keep? Fill in line 25 so the last context line says 2425 chars.
 
+Before you fill it in, the last context line says `708 chars`. The solution's says `2425 chars (8098 without forgetting)`.
+
 ```sh
 npm run your-turn     # your version
 npm run solution      # the answer

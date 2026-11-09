@@ -63,6 +63,8 @@ Agent: Done. Opened https://demo.playwright.dev/todomvc/. The page title is "Rea
 
 Fill in the stop line (line 30) so the loop ends when the model stops asking for tools. Before you fix it, it calls the model until the step limit.
 
+Before you fill it in, the loop never stops early: it calls the model until the step limit (`model call 5`). The solution stops after 2 model calls.
+
 ```sh
 npm run your-turn     # your version
 npm run solution      # the answer
