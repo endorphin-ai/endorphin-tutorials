@@ -9,7 +9,7 @@ The same loop from lesson 1, rebuilt as a LangGraph `StateGraph`: START → agen
 - State: the messages list, with a reducer that appends.
 - Nodes are plain async functions you can unit-test; `ToolNode` runs the tool calls.
 - The conditional edge is lesson 1's `if (no tool calls) break` with a name.
-- `recursionLimit` counts graph steps, not model calls.
+- `recursionLimit` counts graph steps, not model calls (this file sets 10).
 
 ## Files
 
@@ -49,6 +49,10 @@ ai: [{"type":"tool_call","id":"call_8701758600445279206","name":"navigate","args
 tool: Opened https://demo.playwright.dev/todomvc/. The page title is "React • TodoMVC".
 ai: The page title is "React • TodoMVC".
 ```
+
+The long `thoughtSignature` in the tool-call line is Gemini's own bookkeeping for its reasoning; LangChain passes it back on the next call. You can ignore it.
+
+Before you fill it in, `npm run your-turn` reports 1 of 2 tests failing ("next picks tools"); `npm run solution` passes both.
 
 ### Without a key
 
