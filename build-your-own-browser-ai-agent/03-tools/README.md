@@ -25,7 +25,7 @@ Node 22.9 or newer.
 npm install
 npx playwright install chromium     # once per computer
 cp .env.example .env                 # put your key in GOOGLE_API_KEY (free: https://aistudio.google.com/apikey)
-npm start
+npm run 03                          # as in the video (same as: npm start)
 ```
 
 No key? Run it with the model simulated and the browser real:
@@ -34,7 +34,7 @@ No key? Run it with the model simulated and the browser real:
 npm run fake
 ```
 
-Watch the browser: `HEADED=1 npm start`.
+Watch the browser: `HEADED=1 npm run 03`.
 
 Measure page sizes: `npm run measure`. On 2026-11-09 it printed 927 characters for the TodoMVC accessibility snapshot, and 522,389 (live DOM) vs 74,771 (snapshot) for Wikipedia's "Web browser" page; live pages change, so your Wikipedia numbers will differ a little.
 
@@ -131,7 +131,7 @@ Fill in line 23: find an element both ways, by ref and by role + name.
 Before you fill it in, the agent can't find elements, so the answer ends with `The page says ? item left.` The solution ends with `The page says 1 item left.`
 
 ```sh
-npm run your-turn     # your version
+npm run ex03          # your version, as in the video (same as: npm run your-turn)
 npm run solution      # the answer
 ```
 

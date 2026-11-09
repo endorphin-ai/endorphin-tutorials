@@ -27,7 +27,7 @@ Node 22.9 or newer.
 npm install
 npx playwright install chromium     # once per computer
 cp .env.example .env                 # put your key in GOOGLE_API_KEY (free: https://aistudio.google.com/apikey)
-npm start
+npm run 04                          # as in the video (same as: npm start)
 ```
 
 No key? Run it with the model simulated and the browser real:
@@ -36,7 +36,7 @@ No key? Run it with the model simulated and the browser real:
 npm run fake
 ```
 
-Watch the browser: `HEADED=1 npm start`.
+Watch the browser: `HEADED=1 npm run 04`.
 
 ## What you should see
 
@@ -110,7 +110,7 @@ Which snapshot do you keep? Fill in line 25 so the last context line says 2425 c
 Before you fill it in, the last context line says `708 chars`. The solution's says `2425 chars (8098 without forgetting)`.
 
 ```sh
-npm run your-turn     # your version
+npm run ex04          # your version, as in the video (same as: npm run your-turn)
 npm run solution      # the answer
 ```
 

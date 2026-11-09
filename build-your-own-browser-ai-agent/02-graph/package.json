@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "02": "tsx --env-file-if-exists=.env 02-graph.ts",
+    "ex02": "tsx --test exercises/02-your-turn.test.ts",
     "start": "tsx --env-file-if-exists=.env 02-graph.ts",
     "fake": "MODEL=fake tsx 02-graph.ts",
     "your-turn": "tsx --test exercises/02-your-turn.test.ts",

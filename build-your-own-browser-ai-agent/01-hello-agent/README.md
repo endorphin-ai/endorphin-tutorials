@@ -25,7 +25,7 @@ Node 22.9 or newer.
 npm install
 npx playwright install chromium     # once per computer
 cp .env.example .env                 # put your key in GOOGLE_API_KEY (free: https://aistudio.google.com/apikey)
-npm start
+npm run 01                          # as in the video (same as: npm start)
 ```
 
 No key? Run it with the model simulated and the browser real:
@@ -34,7 +34,7 @@ No key? Run it with the model simulated and the browser real:
 npm run fake
 ```
 
-Watch the browser: `HEADED=1 npm start`.
+Watch the browser: `HEADED=1 npm run 01`.
 
 ## What you should see
 
@@ -66,10 +66,14 @@ Fill in the stop line (line 30) so the loop ends when the model stops asking for
 Before you fill it in, the loop never stops early: it calls the model until the step limit (`model call 5`). The solution stops after 2 model calls.
 
 ```sh
-npm run your-turn     # your version
+npm run ex01          # your version, as in the video (same as: npm run your-turn)
 npm run solution      # the answer
 ```
 
 ## Check
 
 `npm run check` type-checks everything (TypeScript, no build step).
+
+## Not in this folder
+
+The video also shows the author's first version from 2024 (OpenAI `gpt-4o`, a hand-built LangGraph `StateGraph`) next to this code. It is shown for comparison only and is not included here, because it was not run again for this repo.

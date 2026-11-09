@@ -1,4 +1,4 @@
-// Your turn 02 · A unit test for next() (lines 29–30 of 02-graph.ts). Fill in line 16, then run: npm run your-turn
+// Your turn 02 · A unit test for next() (lines 29–30 of 02-graph.ts). Fill in line 16, then run: npm run ex02
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { AIMessage, HumanMessage, type BaseMessage } from "langchain";

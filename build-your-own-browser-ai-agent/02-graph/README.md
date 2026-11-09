@@ -26,7 +26,7 @@ Node 22.9 or newer.
 npm install
 npx playwright install chromium     # once per computer
 cp .env.example .env                 # put your key in GOOGLE_API_KEY (free: https://aistudio.google.com/apikey)
-npm start
+npm run 02                          # as in the video (same as: npm start)
 ```
 
 No key? Run it with the model simulated and the browser real:
@@ -35,7 +35,7 @@ No key? Run it with the model simulated and the browser real:
 npm run fake
 ```
 
-Watch the browser: `HEADED=1 npm start`.
+Watch the browser: `HEADED=1 npm run 02`.
 
 ## What you should see
 
@@ -71,10 +71,14 @@ ai: Done. Opened https://demo.playwright.dev/todomvc/. The page title is "React 
 Write a unit test for `next()`, the edge that decides between tools and END (fill in line 16).
 
 ```sh
-npm run your-turn     # your version
+npm run ex02          # your version, as in the video (same as: npm run your-turn)
 npm run solution      # the answer
 ```
 
 ## Check
 
 `npm run check` type-checks everything (TypeScript, no build step).
+
+## Not in this folder
+
+The video shows a few lines from Endorphin's own graph (`ai/agent-setup.ts`, `recursionLimit: 200` in `agent-config.ts`). Read them in the source: https://github.com/endorphin-ai/endorphin-ai

@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "03": "tsx --env-file-if-exists=.env 03-tools.ts",
+    "ex03": "MODEL=fake tsx exercises/03-your-turn.ts",
     "start": "tsx --env-file-if-exists=.env 03-tools.ts",
     "fake": "MODEL=fake tsx 03-tools.ts",
     "your-turn": "MODEL=fake tsx exercises/03-your-turn.ts",

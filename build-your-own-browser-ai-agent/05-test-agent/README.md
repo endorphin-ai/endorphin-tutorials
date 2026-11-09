@@ -27,7 +27,7 @@ Node 22.9 or newer.
 npm install
 npx playwright install chromium     # once per computer
 cp .env.example .env                 # put your key in GOOGLE_API_KEY (free: https://aistudio.google.com/apikey)
-npm start
+npm run 05                          # as in the video (same as: npm start)
 ```
 
 No key? Run it with the model simulated and the browser real:
@@ -36,7 +36,7 @@ No key? Run it with the model simulated and the browser real:
 npm run fake
 ```
 
-Watch the browser: `HEADED=1 npm start`.
+Watch the browser: `HEADED=1 npm run 05`.
 
 ## What you should see
 
@@ -110,7 +110,7 @@ Fill in line 14: a wrong number must print FAILED, and 1 must print PASSED.
 Before you fill it in, the "Your turn" row is FAILED with `expected undefined`. The solution's row is PASSED: `The footer says 1 item left; expected 1.`
 
 ```sh
-npm run your-turn     # your version
+npm run ex05          # your version, as in the video (same as: npm run your-turn)
 npm run solution      # the answer
 ```
 

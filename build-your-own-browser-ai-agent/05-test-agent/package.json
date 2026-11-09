@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "05": "tsx --env-file-if-exists=.env 05-test-agent.ts",
+    "ex05": "MODEL=fake tsx exercises/05-your-turn.ts",
     "start": "tsx --env-file-if-exists=.env 05-test-agent.ts",
     "fake": "MODEL=fake tsx 05-test-agent.ts",
     "your-turn": "MODEL=fake tsx exercises/05-your-turn.ts",

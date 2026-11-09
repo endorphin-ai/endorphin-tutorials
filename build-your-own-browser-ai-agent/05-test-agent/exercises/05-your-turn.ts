@@ -1,4 +1,4 @@
-// Your turn 05 · Fill in line 14: a wrong number must print FAILED; 1 must print PASSED. Run: npm run your-turn
+// Your turn 05 · Fill in line 14: a wrong number must print FAILED; 1 must print PASSED. Run: npm run ex05
 import { writeFile } from "node:fs/promises";
 import { chromium } from "playwright";
 import { createAgent, modelCallLimitMiddleware, type AIMessage } from "langchain";

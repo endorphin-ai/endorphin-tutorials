@@ -1,4 +1,4 @@
-// Your turn 03 · Fill in line 23 (both ways to find an element), then run: npm run your-turn
+// Your turn 03 · Fill in line 23 (both ways to find an element), then run: npm run ex03
 import { chromium, type Locator, type Page } from "playwright";
 import { tool, HumanMessage, type BaseMessage, type StructuredTool } from "langchain";
 import { z } from "zod";

@@ -1,4 +1,4 @@
-// Your turn 04 · Which snapshot do you keep? Fill in line 25 so the last context line says 2425 chars: npm run your-turn
+// Your turn 04 · Which snapshot do you keep? Fill in line 25 so the last context line says 2425 chars: npm run ex04
 import { chromium } from "playwright";
 import { tool, HumanMessage, SystemMessage, ToolMessage, AIMessage, type BaseMessage, type StructuredTool } from "langchain";
 import { StateGraph, StateSchema, MessagesValue, ReducedValue, START, END, GraphRecursionError } from "@langchain/langgraph";

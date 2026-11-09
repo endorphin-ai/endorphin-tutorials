@@ -1,4 +1,4 @@
-// Your turn 01 · The same loop. Fill in line 30, the stop line, then run: npm run your-turn
+// Your turn 01 · The same loop. Fill in line 30, the stop line, then run: npm run ex01
 import { chromium } from "playwright";
 import { tool, HumanMessage, type BaseMessage } from "langchain";
 import { z } from "zod";

@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "04": "tsx --env-file-if-exists=.env 04-memory.ts",
+    "ex04": "MODEL=fake tsx exercises/04-your-turn.ts",
     "start": "tsx --env-file-if-exists=.env 04-memory.ts",
     "fake": "MODEL=fake tsx 04-memory.ts",
     "your-turn": "MODEL=fake tsx exercises/04-your-turn.ts",
