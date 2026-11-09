@@ -40,7 +40,45 @@ Measure page sizes: `npm run measure`.
 
 ## What you should see
 
-This is the real output of `npm run fake` (model simulated, browser real), copied from a run on 2026-11-09. With a real model the steps and words can differ.
+### With a real model
+
+The real output of `npm start` with Gemini (`gemini-3.5-flash-lite`), run on 2026-11-09. Your run can word things differently.
+
+```text
+step 1: navigate({"url":"https://demo.playwright.dev/todomvc/"})
+  -> Opened https://demo.playwright.dev/todomvc/#/
+step 2: snapshot({})
+  -> - generic [ref=e1]:
+  - generic [ref=e2]:
+    - text: This is just a demo of TodoMVC for testing, not the
+    - link "real TodoMVC app." [ref=e3] [cursor=pointer]:
+      - /url: https://todomvc.com/
+  - generic [ref=e6]:
+    - heading "todos" [level=1] [ref=e7]
+    - textbox "What needs to be done?"
+step 3: type({"text":"Buy milk","submit":true,"ref":"e8"})
+…
+    - generic [ref=e6]:
+      - heading "todos" [level=1] [ref=e7]
+      - text
+step 7: click({"ref":"e21"})
+  -> Clicked.
+step 8: snapshot({})
+  -> - generic [ref=e1]:
+  - generic [ref=e2]:
+    - text: This is just a demo of TodoMVC for testing, not the
+    - link "real TodoMVC app." [ref=e3] [cursor=pointer]:
+      - /url: https://todomvc.com/
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - heading "todos" [level=1] [ref=e7]
+      - text
+Agent: There is no "Delete everything" button in the standard TodoMVC demo app (there is only a "Clear completed" button). Therefore, I couldn't click a "Delete everything" button.
+```
+
+### Without a key
+
+The real output of `npm run fake` (model simulated, browser real), same day:
 
 ```text
 [model simulated, browser real] lesson 03

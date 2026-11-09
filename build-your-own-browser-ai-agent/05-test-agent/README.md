@@ -40,7 +40,40 @@ Watch the browser: `HEADED=1 npm start`.
 
 ## What you should see
 
-This is the real output of `npm run fake` (model simulated, browser real), copied from a run on 2026-11-09. With a real model the steps and words can differ.
+### With a real model
+
+The real output of `npm start` with Gemini (`gemini-3.5-flash-lite`), run on 2026-11-09. Your run can word things differently.
+
+```text
+Complete a todo:
+  navigate({"url":"https://demo.playwright.dev/todomvc/"})
+  snapshot({})
+  type({"text":"Buy milk","submit":true,"ref":"e8"})
+  type({"ref":"e8","text":"Walk the dog","submit":true})
+  snapshot({})
+  click({"ref":"e21"})
+  snapshot({})
+Wrong on purpose:
+  navigate({"url":"https://demo.playwright.dev/todomvc/"})
+  snapshot({})
+  type({"ref":"e8","text":"Buy milk","submit":true})
+  snapshot({})
+  type({"ref":"e8","text":"Walk the dog","submit":true})
+  snapshot({})
+  click({"ref":"e21"})
+  snapshot({})
+┌─────────┬────────────────────┬──────────┬─────────────────────────────────────────────────────────────────────────────────────────────┬─────────┬─────────┐
+│ (index) │ test               │ result   │ reason                                                                                      │ actions │ seconds │
+├─────────┼────────────────────┼──────────┼─────────────────────────────────────────────────────────────────────────────────────────────┼─────────┼─────────┤
+│ 0       │ 'Complete a todo'  │ 'PASSED' │ "The footer correctly shows '1 item left' after marking 'Buy milk' as done."                │ 7       │ 6.356   │
+│ 1       │ 'Wrong on purpose' │ 'FAILED' │ "The footer says '1 item left' instead of '2 items left' after marking 'Buy milk' as done." │ 8       │ 7.41    │
+└─────────┴────────────────────┴──────────┴─────────────────────────────────────────────────────────────────────────────────────────────┴─────────┴─────────┘
+Saved report.md
+```
+
+### Without a key
+
+The real output of `npm run fake` (model simulated, browser real), same day:
 
 ```text
 [model simulated, browser real] lesson 05

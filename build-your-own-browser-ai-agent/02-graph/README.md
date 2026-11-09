@@ -39,7 +39,20 @@ Watch the browser: `HEADED=1 npm start`.
 
 ## What you should see
 
-This is the real output of `npm run fake` (model simulated, browser real), copied from a run on 2026-11-09. With a real model the steps and words can differ.
+### With a real model
+
+The real output of `npm start` with Gemini (`gemini-3.5-flash-lite`), run on 2026-11-09. Your run can word things differently.
+
+```text
+human: Go to https://demo.playwright.dev/todomvc/ and tell me the page title.
+ai: [{"type":"tool_call","id":"call_8701758600445279206","name":"navigate","args":{"url":"https://demo.playwright.dev/todomvc/"},"thoughtSignature":"EmAKXgFpFH0TXNNCF3yrmFsDVp9Vy6h55tpU9f8+xdYZGah5AIV…
+tool: Opened https://demo.playwright.dev/todomvc/. The page title is "React • TodoMVC".
+ai: The page title is "React • TodoMVC".
+```
+
+### Without a key
+
+The real output of `npm run fake` (model simulated, browser real), same day:
 
 ```text
 [model simulated, browser real] lesson 02

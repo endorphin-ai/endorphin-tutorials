@@ -24,4 +24,4 @@ npm start                         # or, with no key: npm run fake
 
 ## How this code was checked
 
-Every folder was installed fresh, type-checked (`npm run check`) and run on a Mac (Node 22.18, 2026-11-09): `npm run fake` (the model simulated by a script, the browser real) and `npm run solution` for the exercise. The outputs in each README are copied from those runs. Runs with a real Gemini key were not part of this check; with a real model the steps and wording can differ.
+Every folder was installed fresh, type-checked (`npm run check`) and run on a Mac (Node 22.18, 2026-11-09) three ways: `npm start` with a real Gemini key (`gemini-3.5-flash-lite`), `npm run fake` (the model simulated by a script, the browser real) and `npm run solution` for the exercise. Lesson 1 was also checked from a fresh clone of this repo. The outputs in each README are copied from those runs; a real model can word its answers differently.

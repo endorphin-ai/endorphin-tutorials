@@ -38,7 +38,19 @@ Watch the browser: `HEADED=1 npm start`.
 
 ## What you should see
 
-This is the real output of `npm run fake` (model simulated, browser real), copied from a run on 2026-11-09. With a real model the steps and words can differ.
+### With a real model
+
+The real output of `npm start` with Gemini (`gemini-3.5-flash-lite`), run on 2026-11-09. Your run can word things differently.
+
+```text
+step 1: navigate({"url":"https://demo.playwright.dev/todomvc/"})
+  -> Opened https://demo.playwright.dev/todomvc/. The page title is "React • TodoMVC".
+Agent: The page title is **"React • TodoMVC"**.
+```
+
+### Without a key
+
+The real output of `npm run fake` (model simulated, browser real), same day:
 
 ```text
 [model simulated, browser real] lesson 01

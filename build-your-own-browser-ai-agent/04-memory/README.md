@@ -40,7 +40,38 @@ Watch the browser: `HEADED=1 npm start`.
 
 ## What you should see
 
-This is the real output of `npm run fake` (model simulated, browser real), copied from a run on 2026-11-09. With a real model the steps and words can differ.
+### With a real model
+
+The real output of `npm start` with Gemini (`gemini-3.5-flash-lite`), run on 2026-11-09. Your run can word things differently.
+
+```text
+agent: context 176 chars (176 without forgetting), tokens in 380 out 26
+  navigate({"url":"https://demo.playwright.dev/todomvc/"}) -> Opened https://demo.playwright.dev/todomvc/#/
+agent: context 221 chars (221 without forgetting), tokens in 432 out 8
+  snapshot({}) -> - generic [ref=e1]: - generic [ref=e2]: - text: This is just
+agent: context 911 chars (911 without forgetting), tokens in 707 out 26
+  type({"ref":"e8","submit":true,"text":"Buy milk"}) -> Typed "Buy milk" and pressed Enter.
+agent: context 946 chars (946 without forgetting), tokens in 753 out 27
+  type({"submit":true,"ref":"e8","text":"Walk the dog"}) -> Typed "Walk the dog" and pressed Enter.
+agent: context 985 chars (985 without forgetting), tokens in 801 out 26
+  type({"submit":true,"text":"Call mum","ref":"e8"}) -> Typed "Call mum" and pressed Enter.
+agent: context 1020 chars (1020 without forgetting), tokens in 847 out 29
+  note({"text":"Added todos: 'Buy milk', 'Walk the dog', 'Call mum'"}) -> Saved.
+agent: context 1067 chars (1067 without forgetting), tokens in 901 out 8
+  snapshot({}) -> - generic [ref=e1]: - generic [ref=e2]: - text: This is just
+agent: context 2263 chars (2931 without forgetting), tokens in 1339 out 16
+  click({"ref":"e29"}) -> Clicked.
+agent: context 2271 chars (2939 without forgetting), tokens in 1368 out 8
+  snapshot({}) -> - generic [ref=e1]: - generic [ref=e2]: - text: This is just
+agent: context 2384 chars (4894 without forgetting), tokens in 1424 out 37
+Agent: I have added 'Buy milk', 'Walk the dog', and 'Call mum' to the TodoMVC list, noted what was added, and marked 'Call mum' as completed.
+Notes: Added todos: 'Buy milk', 'Walk the dog', 'Call mum'
+Tokens used: 9163
+```
+
+### Without a key
+
+The real output of `npm run fake` (model simulated, browser real), same day:
 
 ```text
 [model simulated, browser real] lesson 04
